@@ -7,39 +7,31 @@ export default class IndexPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+    return ( 
+      <div>
+      <section class="hero is-medium bg-image">
+        <div class="hero-body">
+            <div class="container">
+              <h1 class="title has-text-white">
+              Medium title
+            </h1>
+              <h2 class="subtitle has-text-white">
+              Medium subtitle
+            </h2>
           </div>
-          {posts
-            .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-            .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
         </div>
       </section>
+      <section class="section">
+       <div class="container">
+        <h1 class="title">Section</h1>
+        <h2 class="subtitle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat officia similique quia. Laborum ad molestiae exercitationem facere beatae recusandae ipsum. Natus quis beatae sint aliquam illo commodi fugit incidunt molestias.
+        </h2>
+        </div>
+       </section>
+      </div>
+      
+
     )
   }
 }

@@ -1,11 +1,16 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$kaldi-red: #FD461E
+$kaldi-red: #500000
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
+
+$navbar-height: 4rem
+
+$footer-background-color: $primary
+
 
 .content .taglist
   list-style: none
@@ -39,4 +44,22 @@ $primary-invert: $kaldi-red-invert
 .margin-top-0
   margin-top: 0 !important
 
+.bg-image 
+  background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.1)), url('https://source.unsplash.com/random') center / cover
+
 @import "~bulma"
+
+html, body 
+  height: 100vh
+
+.wrapper 
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+
+main 
+  flex: 1 0 auto
+
+.footer 
+  flex-shrink: 0
