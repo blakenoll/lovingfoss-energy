@@ -9,7 +9,7 @@ $primary-invert: $kaldi-red-invert
 
 $navbar-height: 4rem
 
-$footer-background-color: $primary
+$footer-background-color: $kaldi-red
 
 
 .content .taglist
@@ -59,11 +59,19 @@ html, body
 
 .navbar-item 
   color: $kaldi-red
+  letter-spacing: 1px
+  text-transform: uppercase
   img
     max-height: none
 
 a.navbar-item:hover
   color: $kaldi-red
+
+.navbar-link::after
+  border: 1px solid $kaldi-red 
+  border-right: 0
+  border-top: 0
+
 
 .logo:hover
   background-color: #fff !important
@@ -76,3 +84,8 @@ main
 
 .footer 
   flex-shrink: 0
+  a 
+    color: #fff
+    text-transform: uppercase
+    letter-spacing: 1px
+

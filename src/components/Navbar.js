@@ -43,16 +43,26 @@ class Navbar extends React.Component {
 
              </div>
              <div className="navbar-end" onClick={this.handleClick}>
-               <Link className="navbar-item"
-                 to="/about">About</Link>
+                 <div class="navbar-item has-dropdown is-hoverable">
+                  <div class="navbar-link">
+                    About
+                  </div>
+                  <div class="navbar-dropdown">
+                  <Link className="navbar-item" to="/about/services">
+                    Services
+                  </Link>
+                  <Link className="navbar-item" to="/about/investments">
+                    Investment Opportunities
+                  </Link>
+
+                  </div>
+                </div>
                <Link className="navbar-item"
                  to="/team">Team</Link>
                <Link className="navbar-item"
-                 to="/">Portfolio</Link>
+                 to="/portfolio">Portfolio</Link>
                <Link className="navbar-item"
-                 to="/">Services</Link>
-               <Link className="navbar-item"
-                 to="/">Contact</Link>
+                 to="/contact">Contact</Link>
 
              </div>
            </div>
