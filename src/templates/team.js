@@ -7,10 +7,10 @@ export const TeamPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div>
-      <section className="hero is-primary">
+      <section className="hero bg-image">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <h1 className="title">
+          <h1 className="title has-text-white">
             {title}
           </h1>
         </div>
