@@ -36,11 +36,10 @@ export const PortfolioPageTemplate = ({ title, content, contentComponent, minera
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-              <PageContent className="content" content={content} />
-              <h3 className="title">Large equity and acreage deals</h3>
+              <h2 className="title">Large equity and acreage deals</h2>
               <PortfolioItem pItems={equity} />
               <hr />
-              <h3 className="title">Mineral deals</h3>
+              <h2 className="title">Mineral deals</h2>
               <PortfolioItem pItems={mineral} />
           </div>
         </div>
