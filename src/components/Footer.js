@@ -1,6 +1,6 @@
 import React from "react"
 
-import logo from '../../static/img/MiniLogoFinal.jpg'
+import logo from '../../static/img/logolovingwhite.png'
 
 const Footer = () => (
   <footer className="footer">
@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="has-text-white">
     <div className="columns">
       <div className="column is-4">
-      <img src={logo} width="100px" />
+      <img src={logo} width="73px" />
         <h3 className="is-size-4 has-text-white">Lovingfoss Energy</h3>
       </div>
       <div className="column is-4">
