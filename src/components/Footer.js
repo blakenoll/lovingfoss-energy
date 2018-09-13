@@ -1,4 +1,5 @@
 import React from "react"
+import Link from 'gatsby-link'
 
 import logo from '../../static/img/logolovingwhite.png'
 
@@ -28,19 +29,19 @@ const Footer = () => (
       <h3 className="is-size-4 has-text-white">Links</h3>
       <hr/>
           <p>
-            <a className="link is-info">Services</a>
+          <Link to="/about/services">Services</Link>
           </p>
           <p>
-            <a className="link is-info">investment Opportunities</a>
+          <Link to="/about/investments">Investment Opportunities</Link>
           </p>
           <p>
-            <a className="link is-info">Team</a>
+          <Link to="/team">Team</Link>
           </p>
           <p>
-            <a className="link is-info">Portfolio</a>
+          <Link to="/portfolio">Portfolio</Link>
           </p>
           <p>
-            <a className="link is-info">Contact</a>
+          <Link to="/contact">Contact</Link>
           </p>
       </div>
     </div>
